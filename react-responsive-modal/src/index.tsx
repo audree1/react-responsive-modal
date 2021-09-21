@@ -308,7 +308,7 @@ export const Modal = React.forwardRef(
           >
             <div
               className={cx(classes.overlay, classNames?.overlay)}
-              data-testid="overlay"
+              id="overlay"
               aria-hidden={true}
               style={{
                 animation: `${overlayAnimation} ${animationDuration}ms`,
@@ -323,7 +323,7 @@ export const Modal = React.forwardRef(
                 classNames?.modalContainer
               )}
               style={styles?.modalContainer}
-              data-testid="modal-container"
+              id="modal-container"
               onClick={handleClickOverlay}
             >
               <div
